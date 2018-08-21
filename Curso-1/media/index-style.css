@@ -1,0 +1,18 @@
+/* o seletor é o nome "referênecia" por ex: h1*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5ee9e;
+    color: #2d728f;
+}
+
+h1 {
+    font-size: 42px;
+    background-color: #3b8ea5;
+    color: #f5ee9e;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    color: #3b8ea5;
+}
