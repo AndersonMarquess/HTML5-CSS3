@@ -1,11 +1,23 @@
-/* o seletor é o nome "referênecia" por ex: h1*/
+/* 
+
+Cores
+
+#2d728f //Azul escuro
+#3b8ea5 //Azul claro
+#f5ee9e //Quase amarelo
+#f49e4c //laranja
+#ab3428 //vermelho claro
+
+*/
+
+/* o seletor é o nome "referência" por ex: h1*/
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     background-color: #f5ee9e;
     color: #2d728f;
 }
 
-h1 {
+main h1 {
     font-size: 42px;
     background-color: #3b8ea5;
     color: #f5ee9e;
@@ -15,4 +27,36 @@ h1 {
 h2 {
     font-size: 28px;
     color: #3b8ea5;
+}
+
+p {
+    text-align: justify;
+}
+
+blockquote {
+    background-color: #f49e4c;
+    color: #2d728f;
+}
+
+/*Barra de navegação*/
+aside nav {
+    background-color: #f49e4c;
+    color: #2d728f;
+}
+
+/*Rodapé*/
+body footer {
+    background-color: #2d728f;
+    color: #f5ee9e;
+    text-align: center;
+}
+
+/*Tags*/
+main footer a {
+    color: #f5ee9e;
+}
+
+/*Links da barra de navegação*/
+aside a{
+    text-decoration: none;
 }
