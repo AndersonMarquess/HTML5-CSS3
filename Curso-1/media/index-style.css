@@ -28,6 +28,9 @@ body {
     text-align: center;
     padding: 50px;
     border-bottom: 10px solid #2d728f;
+
+    /*Aparece tudo em maiúsculo e não afeta os leitores de tela*/
+    text-transform: uppercase;
 }
 
 
@@ -93,6 +96,7 @@ footer {
 .titulo-navegacao {
     font-size: 24px;
     padding: 20px;
+    text-transform: uppercase;
 }
 
 
@@ -107,6 +111,34 @@ aside {
 
 .icones-sociais li {
     display: inline-block;
+}
+
+
+/*Coloca a imagem com css*/
+.icones-sociais a {
+    /*Para permitir aplicar o width e height*/
+    display: block;
+
+    width: 40px;
+    height: 40px;
+
+    /*image replacement 0.o */
+    text-indent: -9999px;
+}
+
+
+.github {
+    background-image: url(github.png);
+}
+
+
+.twitter {
+    background-image: url(twitter.png);
+}
+
+
+.linkedin {
+    background-image: url(linkedin.png);
 }
 
 
@@ -127,6 +159,7 @@ strong {
 cite {
     font-style: italic;
 }
+
 
 .leia-mais {
     text-align: center;
