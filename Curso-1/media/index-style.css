@@ -95,13 +95,16 @@ aside h1 {
 }
 
 /*Barra de navegação*/
-aside nav {
+aside {
     background-color: #f49e4c;
     color: #2d728f;
     text-align: center;
     padding-bottom: 20px;
 }
 
+aside li {
+    display: inline-block;
+}
 
 /*div com todo conteúdo*/
 main div {
