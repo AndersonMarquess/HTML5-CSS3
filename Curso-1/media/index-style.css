@@ -15,7 +15,6 @@ body {
     font-family: 'M PLUS Rounded 1c', sans-serif;
     background-color: #f5ee9e;
     color: #2d728f;
-    margin: 0px;
 
     /*Aumenta o espaçamento entre as linhas, melhorando a legibilidade*/
     line-height: 1.7;
@@ -23,17 +22,20 @@ body {
 
 
 main h1 {
-    font-size: 42px;
+    font-size: 52px;
     background-color: #3b8ea5;
     color: #f5ee9e;
     text-align: center;
     padding: 50px;
-    margin: 0px;
     border-bottom: 10px solid #2d728f;
 }
 
+h1, h2 {
+    font-weight: bold;
+}
 
 h2 {
+    margin-top: 30px;
     font-size: 28px;
     color: #3b8ea5;
 }
@@ -41,6 +43,8 @@ h2 {
 
 p {
     text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 
@@ -83,15 +87,19 @@ main footer a {
 }
 
 
+/*Nome barra de navegação*/
+aside h1 {
+    font-size: 24px;
+    /* margin-bottom: 25px; */
+    padding: 20px;
+}
+
 /*Barra de navegação*/
-aside nav, ul {
+aside nav {
     background-color: #f49e4c;
     color: #2d728f;
     text-align: center;
-
-    /*Remove os círculos da lista*/
-    list-style: none;
-    padding: unset;
+    padding-bottom: 20px;
 }
 
 
@@ -100,4 +108,14 @@ main div {
     width: 720px;
     box-sizing: border-box;
     margin: auto;
+    padding: 30px 0;
+}
+
+
+strong {
+    font-weight: bold;
+}
+
+cite {
+    font-style: italic;
 }
