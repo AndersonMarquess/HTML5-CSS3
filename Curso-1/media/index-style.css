@@ -21,7 +21,7 @@ body {
 }
 
 
-main h1 {
+.titulo-pagina {
     font-size: 52px;
     background-color: #3b8ea5;
     color: #f5ee9e;
@@ -30,9 +30,11 @@ main h1 {
     border-bottom: 10px solid #2d728f;
 }
 
+
 h1, h2 {
     font-weight: bold;
 }
+
 
 h2 {
     margin-top: 30px;
@@ -49,7 +51,7 @@ p {
 
 
 /*Bloco de citação*/
-blockquote {
+.citacao {
     background-color: #f49e4c;
     color: #2d728f;
     padding: 15px;
@@ -64,16 +66,16 @@ blockquote {
 
 
 /*Tags*/
-article footer {
-    background-color: #2d728f;
-    color: #f5ee9e;
+footer {
+    background-color: #3b8ea5;
+    color: #fff589;
     text-align: unset;
-    padding: unset;
+    padding-left: 5px;
 }
 
 
-/*Rodapé*/
-footer {
+/*Rodapé da página1*/
+.rodape-pagina {
     background-color: #2d728f;
     color: #f5ee9e;
     text-align: center;
@@ -81,18 +83,18 @@ footer {
 }
 
 
-/*Tags*/
-main footer a {
+/* Tags*/
+.footer-tags a{
     color: #f5ee9e;
 }
 
 
 /*Nome barra de navegação*/
-aside h1 {
+.titulo-navegacao {
     font-size: 24px;
-    /* margin-bottom: 25px; */
     padding: 20px;
 }
+
 
 /*Barra de navegação*/
 aside {
@@ -102,12 +104,14 @@ aside {
     padding-bottom: 20px;
 }
 
-aside li {
+
+.icones-sociais li {
     display: inline-block;
 }
 
+
 /*div com todo conteúdo*/
-main div {
+.conteudo {
     width: 720px;
     box-sizing: border-box;
     margin: auto;
@@ -119,6 +123,16 @@ strong {
     font-weight: bold;
 }
 
+
 cite {
     font-style: italic;
+}
+
+.leia-mais {
+    text-align: center;
+    margin: auto;
+    display: block;
+    color: #3b8ea5;
+    font-weight: bold;
+    text-decoration: none;
 }
