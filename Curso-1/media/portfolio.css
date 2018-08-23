@@ -1,0 +1,29 @@
+/* div com o conteúdo da página */
+.conteudo {
+    padding-bottom: 800px;
+}
+
+
+/* bloco de imagem e texto */
+figure {
+    border: 5px solid #3b8ea5;
+    border-radius: 5px;
+    width: 310px;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+
+/* texto do bloco */
+figcaption {
+    width: 90%;
+    margin: auto;
+}
+
+
+.img-portfolio {
+    width: 100%;
+    box-sizing: border-box;
+}
