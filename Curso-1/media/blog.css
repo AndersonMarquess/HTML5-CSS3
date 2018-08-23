@@ -1,0 +1,26 @@
+
+
+/* rodapé das tags */
+footer {
+    background-color: #3b8ea5;
+    color: #fff589;
+    text-align: unset;
+    padding-left: 5px;
+}
+
+
+/* Link das tags */
+.footer-tags a{
+    color: #f5ee9e;
+}
+
+
+/* Link de leia mais */
+.leia-mais {
+    text-align: center;
+    margin: auto;
+    display: block;
+    color: #3b8ea5;
+    font-weight: bold;
+    text-decoration: none;
+}

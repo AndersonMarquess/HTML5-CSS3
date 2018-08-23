@@ -54,57 +54,13 @@ p {
 }
 
 
-/*Bloco de citação*/
-.citacao {
-    background-color: #f49e4c;
-    color: #2d728f;
-    padding: 15px;
-    border-bottom: 10px solid #3b8ea5;
-    width: 250px;
-    margin: 0px;
-    border-radius: 5px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-
-    /*O Width afeta o tamanho total do elemento*/
-    box-sizing: border-box;
-}
-
-
-.primeira-citacao, cite {
-    float: right;
-    margin-left: 20px;
-}
-
-
-.segunda-citacao {
-    float: left;
-    margin-right: 20px;
-}
-
-
-/*Tags*/
-footer {
-    background-color: #3b8ea5;
-    color: #fff589;
-    text-align: unset;
-    padding-left: 5px;
-}
-
-
-/*Rodapé da página1*/
+/*Rodapé da página*/
 .rodape-pagina {
     background-color: #2d728f;
     color: #f5ee9e;
     text-align: center;
     padding: 20px;
     clear: both;
-}
-
-
-/* Tags*/
-.footer-tags a{
-    color: #f5ee9e;
 }
 
 
@@ -122,25 +78,25 @@ aside {
     color: #2d728f;
     text-align: center;
     padding-bottom: 20px;
-    float: right;
-    width: 15%;
+    width: 170px;
+    border-left: #2d728f 10px solid;
+    border-bottom: #2d728f 10px solid;
+    box-sizing: border-box;
+    border-bottom-left-radius: 5px; 
 }
 
 
 #foto-principal {
-    float: right;
-    width: 15%;
+    width: 170px;
+    border-top: #2d728f 10px solid;
+    border-left: #2d728f 10px solid;
+    box-sizing: border-box;
+    border-top-left-radius: 5px;
 }
 
 
 aside {
     clear: right;
-}
-
-
-main {
-    float: left;
-    width: 85%;
 }
 
 
@@ -163,17 +119,17 @@ main {
 
 
 .github {
-    background-image: url(github.png);
+    background-image: url(img/github.png);
 }
 
 
 .twitter {
-    background-image: url(twitter.png);
+    background-image: url(img/twitter.png);
 }
 
 
 .linkedin {
-    background-image: url(linkedin.png);
+    background-image: url(img/linkedin.png);
 }
 
 
@@ -191,16 +147,16 @@ strong {
 }
 
 
-cite {
-    font-style: italic;
+/*Posicionamento da imagem na tela*/
+#foto-principal {
+    position: absolute;
+    top: 250px;
+    right: 0px;
 }
 
 
-.leia-mais {
-    text-align: center;
-    margin: auto;
-    display: block;
-    color: #3b8ea5;
-    font-weight: bold;
-    text-decoration: none;
+aside {
+    position: absolute;
+    top: 354px;
+    right: 0px;
 }

@@ -1,0 +1,34 @@
+
+/* Nome do autor da citação */
+cite {
+    font-style: italic;
+}
+
+
+/* Bloco de citação */
+.citacao {
+    background-color: #f49e4c;
+    color: #2d728f;
+    padding: 15px;
+    border-bottom: 10px solid #3b8ea5;
+    width: 250px;
+    margin: 0px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    /* O Width afeta o tamanho total do elemento */
+    box-sizing: border-box;
+}
+
+
+.primeira-citacao, cite {
+    float: right;
+    margin-left: 20px;
+}
+
+
+.segunda-citacao {
+    float: left;
+    margin-right: 20px;
+}
