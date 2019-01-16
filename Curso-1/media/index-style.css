@@ -22,12 +22,12 @@ body {
 
 
 .titulo-pagina {
-    font-size: 52px;
+    font-size: 3.2rem;
     background-color: #3b8ea5;
     color: #f5ee9e;
     text-align: center;
-    padding: 50px;
-    border-bottom: 10px solid #2d728f;
+    padding: 2.8rem;
+    border-bottom: 0.7rem solid #2d728f;
 
     /*Aparece tudo em maiúsculo e não afeta os leitores de tela*/
     text-transform: uppercase;
@@ -42,15 +42,23 @@ h1, h2 {
 h2 {
     /*Limpa o float */
     clear: both;
-    font-size: 28px;
+    /*
+        Rem = para definir o tamanho da fonte com base na configuração do navegador.
+        Fonte padrão navegador: 16px.
+        fonte-size: 16px * 2rem = 32px.
+        ---//---
+        Em = leva também em consideração o tamanho da fonte escolhida no elemento.
+    */
+    font-size: 2rem;
     color: #3b8ea5;
 }
 
 
 p {
     text-align: justify;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 
@@ -59,7 +67,7 @@ p {
     background-color: #2d728f;
     color: #f5ee9e;
     text-align: center;
-    padding: 20px;
+    padding: 1rem;
 
     position: fixed;
     bottom: 0;
@@ -69,8 +77,8 @@ p {
 
 /*Nome barra de navegação*/
 .titulo-navegacao {
-    font-size: 24px;
-    padding: 20px;
+    font-size: 1.5rem;
+    padding: 1.25rem;
     text-transform: uppercase;
 }
 
@@ -81,18 +89,18 @@ aside {
     color: #2d728f;
     text-align: center;
     padding-bottom: 20px;
-    width: 170px;
-    border-left: #2d728f 10px solid;
-    border-bottom: #2d728f 10px solid;
+    width: 10.5rem;
+    border-left: #2d728f 0.625rem solid;
+    border-bottom: #2d728f 0.625rem solid;
     box-sizing: border-box;
     border-bottom-left-radius: 5px; 
 }
 
 
 #foto-principal {
-    width: 170px;
-    border-top: #2d728f 10px solid;
-    border-left: #2d728f 10px solid;
+    width: 10.5rem;
+    border-top: #2d728f 0.625rem solid;
+    border-left: #2d728f 0.625rem solid;
     box-sizing: border-box;
     border-top-left-radius: 5px;
 }
