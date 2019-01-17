@@ -19,6 +19,7 @@ header h1 {
 }
 .foto-home {
     height: 9rem;
+    border-radius: 0 10% / 0 50%;
 }
 .saudacao {
     box-sizing: border-box;

@@ -27,3 +27,13 @@ figcaption {
     width: 100%;
     box-sizing: border-box;
 }
+
+.img-1 {
+    /*
+    No eixo X(Horizontal) considere 10% do tamanho,
+    No eixo Y(Vertical) considere o arredondamento de 50%
+    rx => 10 10 10 10
+    ry => 50 50 50 50
+    */
+    border-radius: 10% / 50%;
+}
