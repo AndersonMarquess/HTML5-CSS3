@@ -4,6 +4,7 @@ header {
     text-align: center;
     height: 17rem;
     border-bottom: .5rem solid black;
+    position: relative;
 }
 header h1 {
     font-size: 2.5rem;
@@ -141,4 +142,55 @@ main {
     right: 3em;
     height: 4em;
     padding: 1em;
+}
+
+.palavra-home {
+    font-weight: bold;
+    font-family: 'Shadows Into Light';
+    font-size: 1.2em;
+    position: absolute;
+}
+.eficiencia {
+    top: 25%;
+    left: 72%;
+}
+.boas-praticas {
+    top: 27%;
+    right: 70%;
+}
+.codigo-limpo {
+    top: 5%;
+    right: 60%;
+}
+.css3 {
+    top: 5%;
+    left: 60%;
+}
+.javascript {
+    top: 43%;
+    right: 67%;
+}
+.html5 {
+    top: 43%;
+    left: 67%;
+}
+.acessibilidade {
+    top: 18%;
+    right: 64%;
+}
+.responsivo {
+    top: 17%;
+    left: 63%;
+}
+.otimizacoes {
+    top: 33%;
+    right: 60%;
+}
+.agilidade {
+    top: 30%;
+    left: 60%;
+}
+.design {
+    top: 5%;
+    left: 70%;
 }
