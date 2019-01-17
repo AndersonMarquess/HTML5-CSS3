@@ -91,6 +91,8 @@ header h1 {
     color: #FFF;
     border-bottom: 10px solid #851944;
     padding: 5ch;
+    /*Posição que será herdada pelo position absolute dos elementos filhos */
+    position: relative;
 }
 
 .blog h2 {
@@ -128,4 +130,15 @@ main {
     width: 100%;
     padding-bottom: 0;
     float: none;
+}
+
+.inicio-post {
+    /* Sobrepoem o bloco do blog */
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 3em;
+    right: 3em;
+    height: 4em;
+    padding: 1em;
 }
