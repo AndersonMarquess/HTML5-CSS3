@@ -215,3 +215,28 @@ main {
 .blog .mais-recente a {
     color: black;
 }
+.adesivo-topo {
+    /* Tamanho do elemento */
+    width: 15em;
+    padding: 1em;
+    border: .3em solid black;
+    line-height: 1em;
+    box-sizing: border-box;
+
+    /* Opções do texto */
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+    background-color: bisque;
+
+    /* Posição e rotação */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform-origin: 0 0;
+    transform: translate(7em, -2.7em) rotate(45deg);
+}
+
+body {
+    overflow-x: hidden;
+}
