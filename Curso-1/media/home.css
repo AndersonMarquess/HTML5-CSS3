@@ -248,3 +248,20 @@ main {
 body {
     overflow-x: hidden;
 }
+
+.modal-teste {
+    padding: 2em;
+    top: 30%;
+    left: 45%;
+    position: fixed;
+    box-sizing: border-box;
+    background-color: #FFF;
+    text-align: center;
+    font-size: 2em;
+
+    /* Jogo o elemento para frente */
+    z-index: 9999;
+    /* Efeito de sombra nos elementos atrás dele. */
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.8);
+
+}
