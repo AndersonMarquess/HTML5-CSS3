@@ -23,4 +23,16 @@ footer {
     color: #3b8ea5;
     font-weight: bold;
     text-decoration: none;
+
+    /* Efeito de hr com gradient */
+    background-image: linear-gradient(to right, #f5ee9e, #3b8ea5, #f5ee9e);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 1px;
+}
+
+body {
+    /* Parte de um circulo no canto inferior direito da tela. */
+    background-image: radial-gradient(circle at bottom right, transparent, transparent 20%, black 20%, black 30%, transparent 30%, transparent), 
+                      linear-gradient(90deg, white, yellowgreen);
 }

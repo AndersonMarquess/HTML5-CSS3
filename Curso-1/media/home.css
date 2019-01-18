@@ -5,7 +5,7 @@ header {
     height: 17rem;
     border-bottom: .5rem solid black;
     position: relative;
-    /* Usando grandientes */
+    /* Usando gradientes */
     background-image: linear-gradient(to right, lightgreen, rgb(113, 191, 255) 95%, #e7bd4a);
     /* Largura de 80% do tamanho do elemento e 50 pixel de altura */
     background-size: 80% 50px;
@@ -85,6 +85,15 @@ header h1 {
     border-top: 10px solid #000;
     border-bottom: 10px solid #000;
     padding: 5ch;
+    /* Efeito de tracejado na diagonal */
+    background-image: linear-gradient(135deg, transparent 14px, rgba(0, 0, 0, 0.8) 14px, transparent 15px);
+    
+    /* O repeat só funciona quando definimos o tamanho do background */
+    background-size: 20px 20px;
+    background-repeat: repeat;
+
+    /* Efeito de estar com background fixo e os elementos acima dele. */
+    background-attachment: fixed;
 }
 .trabalhos h2 {
     color: #FFF;
@@ -110,6 +119,11 @@ header h1 {
     padding: 5ch;
     /*Posição que será herdada pelo position absolute dos elementos filhos */
     position: relative;
+
+    background-image: linear-gradient(45deg, transparent 14px, rgba(0, 0, 0, 0.8) 14px, transparent 15px);
+    background-repeat: repeat;
+    background-size: 20px 20px;
+    background-attachment: fixed;
 }
 
 .blog h2 {
