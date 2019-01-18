@@ -13,6 +13,8 @@ figure {
     float: left;
     margin-right: 15px;
     margin-bottom: 15px;
+    /* Sombra uniforme */
+    box-shadow: 0 0 1em black;
 }
 
 
@@ -36,4 +38,14 @@ figcaption {
     ry => 50 50 50 50
     */
     border-radius: 10% / 50%;
+}
+
+/* Exercício */
+.img-2 {
+    border: 3px solid black;
+    width: 100%;
+    box-shadow: 0 0 0 3px #3b8ea5, 
+                0 0 0 6px black, 
+                0 0 0 9px #3b8ea5, 
+                0 0 0 12px black;
 }
