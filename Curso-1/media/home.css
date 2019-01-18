@@ -5,6 +5,12 @@ header {
     height: 17rem;
     border-bottom: .5rem solid black;
     position: relative;
+    /* Usando grandientes */
+    background-image: linear-gradient(to right, lightgreen, rgb(113, 191, 255) 95%, #e7bd4a);
+    /* Largura de 80% do tamanho do elemento e 50 pixel de altura */
+    background-size: 80% 50px;
+    background-position: left center;
+    background-repeat: no-repeat;
 }
 header h1 {
     font-size: 2.5rem;
