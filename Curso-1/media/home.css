@@ -51,6 +51,9 @@ header h1 {
     color: #851944;
     font-size: 4rem;
     font-family: 'Crimson Text', 'Open Sans Condensed', 'Shadows Into Light';
+    display: inline-block;
+    /* Rotaciona e cria uma elipse |=| -> /=/ com o elemento */
+    transform: rotate(-5deg) skew(-25deg);
 }
 .botao-index {
     background-color: #851944;
@@ -152,9 +155,19 @@ main {
     font-size: 1.2em;
     position: absolute;
 }
+
+.rotate-neg {
+    transform: rotate(-10deg);
+}
+.rotate-pos {
+    transform: rotate(10deg);
+}
+
 .eficiencia {
     top: 25%;
     left: 72%;
+    /* Rotaciona o elemento em -10º no eixo X */
+    transform: rotate(-10deg);
 }
 .boas-praticas {
     top: 27%;
