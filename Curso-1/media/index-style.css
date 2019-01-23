@@ -172,3 +172,12 @@ aside {
     top: 354px;
     right: 0px;
 }
+
+/* Efeito quando o mouse está sobre ou quando o elemento estiver focado */
+.links-navegacao li:hover, .links-navegacao li:focus {
+    text-shadow: 0 0 5px orchid;
+}
+
+main a:hover, main a:focus, footer a:hover, footer a:focus {
+    color:red;
+}
