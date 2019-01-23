@@ -27,13 +27,14 @@ cite {
 }
 
 
-.primeira-citacao, cite {
+/* Pega todos os blockquote ímpar e adiciona o css */
+blockquote:nth-of-type(odd) {
     float: right;
     margin-left: 20px;
 }
 
-
-.segunda-citacao {
+/* Pega todos os blockquote pares e adiciona o css */
+blockquote:nth-of-type(even) {
     float: left;
     margin-right: 20px;
 }
