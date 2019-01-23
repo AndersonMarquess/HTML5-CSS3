@@ -285,3 +285,9 @@ body {
     box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.8);
 
 }
+
+/* Seleciona apenas o ultimo li dentro da sessão de blog */
+.blog ol li+li~li{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
