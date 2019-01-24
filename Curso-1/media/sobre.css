@@ -38,3 +38,16 @@ blockquote:nth-of-type(even) {
     float: left;
     margin-right: 20px;
 }
+
+blockquote:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.8);
+}
+
+blockquote:nth-of-type(odd):hover {
+    transform: rotate(10deg);
+}
+
+blockquote:nth-of-type(even):hover {
+    transform: rotate(-10deg);
+}
