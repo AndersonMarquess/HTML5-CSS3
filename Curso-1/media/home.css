@@ -168,9 +168,9 @@ main {
     background-color: white;
     color: black;
     position: absolute;
-    top: 5em;
+    top: 8em;
     right: 2.75em;
-    height: 4em;
+    height: 10em;
     padding: 1em;
     width: 80%;
 }
@@ -237,12 +237,7 @@ main {
     top: 5%;
     left: 70%;
 }
-.mais-recente {
-    background-color: white;
-}
-.blog .mais-recente a {
-    color: black;
-}
+
 .adesivo-topo {
     /* Tamanho do elemento */
     width: 15em;
@@ -282,7 +277,7 @@ body {
     /* Jogo o elemento para frente */
     z-index: 9999;
     /* Efeito de sombra nos elementos atrás dele. */
-    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.8);
 
 }
 
@@ -291,3 +286,19 @@ body {
     padding-bottom: 0;
     margin-bottom: 0;
 }
+
+.blog p {
+    display: none;
+    max-width: 70%;
+}
+
+.blog a:hover + .inicio-post,
+.blog a:focus + .inicio-post {
+    display: block;
+}
+
+.blog a:hover, .blog a:focus {
+    background-color: white;
+    color: black;
+}
+
