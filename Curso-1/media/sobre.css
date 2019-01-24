@@ -39,15 +39,15 @@ blockquote:nth-of-type(even) {
     margin-right: 20px;
 }
 
-blockquote:hover {
+blockquote:hover, blockquote:focus {
     transform: scale(1.2);
     box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.8);
 }
 
-blockquote:nth-of-type(odd):hover {
+blockquote:nth-of-type(odd):hover, blockquote:nth-of-type(odd):focus {
     transform: rotate(10deg);
 }
 
-blockquote:nth-of-type(even):hover {
+blockquote:nth-of-type(even):hover, blockquote:nth-of-type(even):focus {
     transform: rotate(-10deg);
 }
