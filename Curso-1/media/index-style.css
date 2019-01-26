@@ -155,7 +155,14 @@ a.twitter:hover::after, a.twitter:focus::after {
 
 a.linkedin:hover::after, a.linkedin:focus::after {
     content: attr(data-legenda);
+}
 
+a:hover::before, a:focus::before {
+    content: '';
+    position: absolute;
+    bottom: -3em;
+    right: .2em;
+    background-color: red;
 }
 
 a:hover::after, a:focus::after {
@@ -167,6 +174,28 @@ a:hover::after, a:focus::after {
     right: 1em;
     width: 20ch;
     border: .2em orange solid;
+}
+
+/* Efeito de balão de dialogo quadrinho */
+a:hover::before, a:focus::before {
+    content: '';
+    position: absolute;
+    bottom: -4.2em;
+    right: .7em;
+    width: 1em;
+    height: 1em;
+    background-color: #2d728f;
+    z-index: 1;
+    transform: rotate(45deg);
+    border-bottom: 3px solid orange;
+    border-right: 3px solid orange;
+    border-bottom-right-radius: 3px;
+}
+
+a.linkedin:hover::before, a.linkedin:focus::before,
+a.twitter:hover::before, a.twitter:focus::before {
+    bottom: -3em;
+    right: 1.7em;
 }
 
 /*div com todo conteúdo*/
