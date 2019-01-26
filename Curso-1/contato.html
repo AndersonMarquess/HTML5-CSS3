@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dlog - Contato</title>
+    <!-- Reseta o css padrão do navegador -->
+    <link rel="stylesheet" href="media/reset.css">
+    <link rel="stylesheet" href="media/index-style.css">
+    <link rel="stylesheet" href="media/contato.css">
+</head>
+
+<!-- Conteúdo -->
+
+<body>
+
+    <main>
+        <h1 class="titulo-pagina"> Contato </h1>
+
+        <div class="conteudo">
+            <form>
+                <!-- Fieldset para "embrulhar" campos relacionados -->
+                <fieldset>
+                    <legend>Dados pessoais</legend><!-- Feedback para leitores de tela -->
+                    <label for="nome">Nome:</label>
+                    <input id="nome" type="text" name="nome" placeholder="Seu nome" required autofocus>
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email" placeholder="Seu e-mail" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Assunto</legend>
+                    <input type="radio" id="consultoria" name="assunto" value="consultoria">
+                    <label for="consultoria">Consultoria</label>
+                    
+                    <label>
+                        <input type="radio" name="assunto" value="blog">
+                        Blog
+                    </label>
+                    <label>
+                        <input type="radio" name="assunto" value="outro">
+                        Outro
+                    </label>
+    
+                    <label>
+                        Mensagem:
+                        <textarea name="mensagem" rows="3" cols="30" required></textarea>
+                    </label>
+                </fieldset>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <img id="foto-principal" src="media/img/dog.jpg" alt="Foto do dog">
+
+    <!-- aside = conteúdo auxiliar ao principal -->
+    <aside>
+        <!-- nav = links de navegação -->
+        <nav>
+            <h1 class="titulo-navegacao">The Dog</h1>
+            <ul class="links-navegacao">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="portfolio.html">Portfólio</a>
+                </li>
+                <li>
+                    <a href="sobre.html">Sobre mim</a>
+                </li>
+                <li>
+                    <a href="#">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="icones-sociais">
+            <li>
+                <a class="github" href="https://github.com/dog" data-legenda="Veja meus projetos">Github</a>
+            </li>
+            <li>
+                <a class="twitter" href="https://twitter.com/twitter-joaodasilva" data-legenda="Veja meus posts">Twitter</a>
+            </li>
+            <li>
+                <a class="linkedin" href="https://br.linkedin.com/pub/linkedin-joao-da-silva/32/4/508" data-legenda="Veja meu histórico">Linkedin</a>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- footer = rodapé  -->
+    <footer class="rodape-pagina">
+        &copy; The Dog 2018
+    </footer>
+</body>
+
+</html>
