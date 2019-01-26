@@ -131,18 +131,43 @@ aside {
 
 .github {
     background-image: url(img/github.png);
+    position: relative;
 }
 
+a.github:hover::after, a.github:focus::after {
+    /* Pega o conteúdo presente no atributo data-legenda do elemento. */
+    content: attr(data-legenda);
+    bottom: -3.7em;
+    right: 0;
+}
 
 .twitter {
     background-image: url(img/twitter.png);
 }
 
+a.twitter:hover::after, a.twitter:focus::after {
+    content: attr(data-legenda);
+}
 
 .linkedin {
     background-image: url(img/linkedin.png);
 }
 
+a.linkedin:hover::after, a.linkedin:focus::after {
+    content: attr(data-legenda);
+
+}
+
+a:hover::after, a:focus::after {
+    background-color: #2d728f;
+    color: #f5ee9e;
+    text-indent: initial;
+    position: absolute;
+    bottom: -2.5em;
+    right: 1em;
+    width: 20ch;
+    border: .2em orange solid;
+}
 
 /*div com todo conteúdo*/
 .conteudo {
