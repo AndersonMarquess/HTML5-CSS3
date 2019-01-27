@@ -3,16 +3,29 @@ legend, label[for="mensagem"] {
     font-weight: bold;
 }
 
-fieldset {
-    display: inline-block;
-}
-
-.msg {
+fieldset:nth-child(1) label {
     display: block;
 }
 
-fieldset:nth-child(1) input{
-    min-width: 100%;
+input[name="outro-assunto"] {
+    display: none;
+}
+
+/* pega o input seguinte ao input(radio) com id "Outro", 
+    se o input(radio) estiver marcado*/
+input[id="outro"]:checked ~ input {
+    display: inline;
+}
+
+/* toda Label dentro do fieldset, que estiver dentro de outro fieldset na segunda posição */
+fieldset:nth-child(2) > fieldset label {
+    display: block;
+}
+
+/* Primeiro e ultimo fieldset */
+fieldset:nth-child(1) input, 
+fieldset:nth-last-child(1) textarea {
+    width: 100%;
 }
 
 input:focus, textarea:focus {
@@ -21,7 +34,7 @@ input:focus, textarea:focus {
 
 /* Caso o pattern do input não seja satisfeito */
 input:invalid {
-    box-shadow: 0 0 3px red;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.555);
 }
 
 button:hover, button:focus {
@@ -35,19 +48,30 @@ button {
     background-color: #3b8ea5;
     color: white;
     border-radius: 5px;
-    margin-left: 43%;
+    margin-left: calc(100% - 10em);
 }
 
-input[name="outro-assunto"] {
-    display: none;
+label[for="nome"] {
+    position: relative;
 }
 
-/* pega o input seguinte ao input(radio) com id "Outro", 
-    se o input(radio) estiver marcado*/
-input[id="outro"]:checked ~ input {
-    display: inline;
+label[for="nome"]::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url(../media/img/usuario.png);
+    background-size: 50% 50%;
+    width: 1.5em;
+    height: 1.5em;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 100%;
+    left: 0;
 }
 
-fieldset:nth-last-child(1) {
-    display: block;
+/* O Width deve ocupar 100% menos 2em do left para posionar a imagem do usuário. */
+#nome {
+    width: calc(100% - 2em);
+    position: relative;
+    left: 2em;
 }
