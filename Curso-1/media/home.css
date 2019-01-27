@@ -257,7 +257,10 @@ main {
     top: 0px;
     right: 0px;
     transform-origin: 0 0;
-    transform: translate(7em, -2.7em) rotate(45deg);
+    /*
+        padding = 2em; texto = 1em; border = .6em; == 3.6em
+    */
+    transform: translate(calc(0.707 * calc(3.6em - 100%) + 100%), calc(-0.707 * 3.6em)) rotate(45deg);
 }
 
 body {
