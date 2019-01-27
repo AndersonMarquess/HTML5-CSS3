@@ -23,7 +23,7 @@
                 <fieldset>
                     <legend>Dados pessoais</legend><!-- Feedback para leitores de tela -->
                     <label for="nome">Nome:</label>
-                    <input id="nome" type="text" name="nome" placeholder="Seu nome" required autofocus>
+                    <input id="nome" type="text" name="nome" placeholder="Seu nome" required autofocus pattern="[a-zA-Z ]*" title="Digite apenas letras e espaço">
                     <label for="email">Email:</label>
                     <input id="email" type="email" name="email" placeholder="Seu e-mail" required>
                 </fieldset>
@@ -37,15 +37,16 @@
                         <input type="radio" name="assunto" value="blog">
                         Blog
                     </label>
-                    <label>
-                        <input type="radio" name="assunto" value="outro">
-                        Outro
-                    </label>
-    
-                    <label>
-                        Mensagem:
-                        <textarea name="mensagem" rows="3" cols="30" required></textarea>
-                    </label>
+                    <fieldset>
+                        <input type="radio" name="assunto" value="outro" id="outro">
+                        <label for="outro">Outro</label>
+                        <input type="text" name="outro-assunto">
+                    </fieldset>
+
+                    <fieldset>
+                        <label class="msg" for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" cols="60" rows="10" required placeholder="Sua mensagem"></textarea>
+                    </fieldset>
                 </fieldset>
 
                 <button type="submit">Enviar</button>

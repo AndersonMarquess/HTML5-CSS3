@@ -1,0 +1,39 @@
+legend, .msg {
+    font-weight: bold;
+}
+
+fieldset {
+    display: inline-block;
+}
+
+.msg {
+    display: block;
+}
+
+fieldset:nth-child(1) input{
+    min-width: 100%;
+}
+
+input:focus, textarea:focus {
+    background-color: rgba(226, 235, 195, 1);
+}
+
+/* Caso o pattern do input não seja satisfeito */
+input:invalid {
+    box-shadow: 0 0 3px red;
+}
+
+button:hover, button:focus {
+    background-color: #8C1D3D;
+}
+
+button {
+    font-family: sans-serif;
+    height: 2.5em;
+    width: 10em;
+    background-color: #3b8ea5;
+    color: white;
+    border-radius: 5px;
+    margin-left: 43%;
+}
+
