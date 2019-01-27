@@ -177,7 +177,7 @@ a:hover::after, a:focus::after {
 }
 
 /* Efeito de balão de dialogo quadrinho */
-a:hover::before, a:focus::before {
+.icones-sociais a:hover::before, .icones-sociais a:focus::before {
     content: '';
     position: absolute;
     bottom: -4.2em;
@@ -190,6 +190,10 @@ a:hover::before, a:focus::before {
     border-bottom: 3px solid orange;
     border-right: 3px solid orange;
     border-bottom-right-radius: 3px;
+}
+
+footer {
+    z-index: 9999;
 }
 
 a.linkedin:hover::before, a.linkedin:focus::before,
