@@ -237,5 +237,13 @@ aside {
 }
 
 main a:hover, main a:focus, footer a:hover, footer a:focus {
-    color:red;
+    background-color: #C54974;
+    color:white;
+    box-shadow: 0 0 3px #FA9;
+    text-decoration: none;
+    
+}
+
+main a {
+    transition: .5s;
 }

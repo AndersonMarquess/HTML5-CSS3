@@ -70,7 +70,7 @@ h1 {
 
 /* Transição */
 .citacao {
-    transition: transform .5s linear, box-shadow 2s ease-out;
+    transition: transform .5s linear, box-shadow 1s ease-out;
     /* Primeira transição leva 0s e a segunda 1s */
     /* transition-delay: 0s, 1s; */ /*Atraso*/
 }

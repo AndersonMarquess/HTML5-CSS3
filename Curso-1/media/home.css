@@ -180,6 +180,18 @@ main {
     font-family: 'Shadows Into Light';
     font-size: 1.2em;
     position: absolute;
+    animation: aparecer 2s;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: scale(.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .rotate-neg {
@@ -261,6 +273,10 @@ main {
         padding = 2em; texto = 1em; border = .6em; == 3.6em
     */
     transform: translate(calc(0.707 * calc(3.6em - 100%) + 100%), calc(-0.707 * 3.6em)) rotate(45deg);
+
+    animation: aparecer .5s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
 }
 
 body {
@@ -305,3 +321,22 @@ body {
     color: black;
 }
 
+.saudacao em {
+    animation: flutuar 1s infinite;
+    animation-direction: alternate;/* Suaviza o efeito */
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+
+.saudacao em:hover {
+    animation-play-state: paused;
+}
+
+@keyframes flutuar {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
+}
