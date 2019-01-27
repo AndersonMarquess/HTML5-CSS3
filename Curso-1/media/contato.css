@@ -51,27 +51,34 @@ button {
     margin-left: calc(100% - 10em);
 }
 
-label[for="nome"] {
+label[for="nome"], label[for="email"] {
     position: relative;
+}
+
+label[for="nome"]::before, label[for="email"]::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: 50% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: .7em;
+    position: absolute;
+    top: calc(100% + 0.2em);
+    left: 0em;
+}
+label[for="email"]::before {
+    content: '';
+    background-image: url(../media/img/email.png);
 }
 
 label[for="nome"]::before {
     content: '';
-    background-color: rgba(0, 0, 0, 0.7);
     background-image: url(../media/img/usuario.png);
-    background-size: 50% 50%;
-    width: 1.5em;
-    height: 1.5em;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 100%;
-    left: 0;
-}
+ }
 
-/* O Width deve ocupar 100% menos 2em do left para posionar a imagem do usuário. */
-#nome {
-    width: calc(100% - 2em);
+/* O Width deve ocupar 100% menos 1.7em do left para posionar a imagem. */
+#nome, #email {
+    width: calc(100% - 1.7em);
     position: relative;
-    left: 2em;
+    left: 1.7em;
 }
