@@ -24,6 +24,55 @@ cite {
 
     /* O Width afeta o tamanho total do elemento */
     box-sizing: border-box;
+    position: relative;
+}
+
+
+/* Animação */
+h1 {
+    animation: aparece 2s;
+}
+@keyframes aparece {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animação infinita */
+.citacao {
+    animation: quica 1s infinite;
+    animation-direction: alternate;/* Faz a animação ir e vir */
+    animation-timing-function: ease-in;
+}
+@keyframes quica {
+    from {
+        top: 0;
+    }
+    90% {
+        transform: rotate(-2deg);
+    }
+    95% {
+        transform: rotate(2deg);
+    }
+    to {
+        top: 1em;
+    }
+}
+
+/* Pausar animação */
+.citacao:hover, .citacao:focus {
+    animation-play-state: paused;
+}
+
+
+/* Transição */
+.citacao {
+    transition: transform .5s linear, box-shadow 2s ease-out;
+    /* Primeira transição leva 0s e a segunda 1s */
+    /* transition-delay: 0s, 1s; */ /*Atraso*/
 }
 
 
@@ -42,6 +91,7 @@ blockquote:nth-of-type(even) {
 blockquote:hover, blockquote:focus {
     transform: scale(1.2);
     box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.8);
+    z-index: 2;
 }
 
 blockquote:nth-of-type(odd):hover, blockquote:nth-of-type(odd):focus {
