@@ -1,4 +1,5 @@
-legend, .msg {
+/* Para a label que contiver o atributo for="mensagem" */
+legend, label[for="mensagem"] {
     font-weight: bold;
 }
 
@@ -37,3 +38,16 @@ button {
     margin-left: 43%;
 }
 
+input[name="outro-assunto"] {
+    display: none;
+}
+
+/* pega o input seguinte ao input(radio) com id "Outro", 
+    se o input(radio) estiver marcado*/
+input[id="outro"]:checked ~ input {
+    display: inline;
+}
+
+fieldset:nth-last-child(1) {
+    display: block;
+}
