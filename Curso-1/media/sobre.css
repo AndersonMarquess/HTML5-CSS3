@@ -72,3 +72,36 @@ blockquote::before {
     left: 3em;
     transform: scale(10);
 }
+
+table {
+    /* Por padrão duas bordas, uma ao lado da outra, gera o feito de callapse(união) */
+    border-collapse: separate;
+    border-spacing: 0.25em;
+}
+
+table th, table td {
+    padding: 1em;
+}
+
+thead th, tbody th {
+    color: white;
+    font-weight: bold;
+}
+
+thead th {
+    background-color: #2d728f;
+}
+
+tbody th {
+    background-color: #3C1D3D;
+}
+
+tbody td {
+    background-color: #f49e4c;
+}
+
+tr td[colspan="2"] {
+    text-align: center;
+    vertical-align: middle;
+    font-style: italic;
+}
