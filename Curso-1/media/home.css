@@ -341,9 +341,23 @@ body {
 /* Flexbox */
 .trabalhos ul {
     display: flex;
+    border: unset;
+    overflow: unset;
 }
 
 .trabalhos li {
-    width: unset;
-    flex: 1;
+    border: .5em solid #000;
+}
+
+.trabalhos li:first-child {
+    order: 2;
+    transform: scale(1.1);
+}
+
+.trabalhos li:nth-child(1) {
+    order: 1;
+}
+
+.trabalhos li:nth-child(2) {
+    order: 3;
 }
