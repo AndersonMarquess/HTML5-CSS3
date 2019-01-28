@@ -1,16 +1,8 @@
-/* div com o conteúdo da página */
-.conteudo {
-    padding-bottom: 800px;
-}
-
-
 /* bloco de imagem e texto */
 figure {
     border: 5px solid #3b8ea5;
     border-radius: 5px;
-    width: 310px;
     box-sizing: border-box;
-    float: left;
     margin-right: 15px;
     margin-bottom: 15px;
     /* Sombra uniforme */
@@ -48,4 +40,25 @@ figcaption {
                 0 0 0 6px black, 
                 0 0 0 9px #3b8ea5, 
                 0 0 0 12px black;
+}
+
+/* Flexbox */
+.conteudo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudo figure {
+    /* flex: 1 1 45%; */
+    
+    /* Fator de crescimento em comparação aos outros itens flex*/
+    flex-grow: 1;
+    /* Fator de diminuição em comparação aos outros itens flex */
+    flex-shrink: 1;
+    /* largura do elemento */
+    flex-basis: 45%;
+}
+
+figure:first-child {
+    flex-basis: 100%;
 }
